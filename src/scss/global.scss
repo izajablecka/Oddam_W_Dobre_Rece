@@ -1,0 +1,11 @@
+@import "./main";
+@import "fonts";
+
+* {
+  box-sizing: border-box;
+}
+
+
+html, body {
+  font-family: $font-base;
+}
