@@ -7,9 +7,9 @@ import Home from './components/Home.jsx'
 function App() {
 
   return (
-    <>
-
-    </>
+      <Router>
+        <Route path="/" component={Home} />
+      </Router>
   )
 }
 
