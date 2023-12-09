@@ -47,4 +47,6 @@ const HomeHeader = () => {
             </div>
         </header>
     );
-};eHeader;
+};
+
+export default HomeHeader
