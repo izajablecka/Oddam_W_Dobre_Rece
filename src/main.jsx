@@ -4,7 +4,7 @@ import App from './App.jsx'
 import './scss/index.scss'
 import '../src/scss/main.scss'
 import ErrorPage from "./error_page.jsx";
-import Root from "./root";
+
 import {
     createBrowserRouter,
     RouterProvider,
@@ -13,7 +13,6 @@ import {
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Root />,
         errorElement: <ErrorPage />,
     },
 ]);

@@ -1,52 +1,33 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { Link as ScrollLink } from 'react-scroll';
-import decoration from '../assets/images/decoration.png'
-import './HomeHeader.scss'
+import '../scss/HomeHeader.scss'
 
 const HomeHeader = () => {
     return (
-        <header>
-            <Link />
-            <ScrollLink />
-            <div className="header__section">
-                <div className="topMenu">
-                    <a className="topMenu__item" href="">
-                        <span className="topMenu__login">Zaloguj</span>
-                    </a>
-
-                    <a className="topMenu__item" href="">
-                        <span className="topMenu__addAccount">Załóż konto</span>
-                    </a>
-                </div>
-                <div className="navigation">
-                    <a className="navigation__item navigation__item--active" href="">
-                        <span className="navigation__highlight"> Start </span>
-                    </a>
-
-                    <a className="navigation__item" href="">
-                        <span className="navigation__highlight"> O co chodzi? </span>
-                    </a>
-
-                    <a className="navigation__item" href="">
-                        <span className="navigation__highlight"> O nas </span>
-                    </a>
-
-                    <a className="navigation__item" href="">
-                        <span className="navigation__highlight"> Fundacja i organizacje </span>
-                    </a>
-                    <a className="navigation__item" href="">
-                        <span className="navigation__highlight"> Kontakt </span>
-                    </a>
-                </div>
-                <div className="intro">
-                    <h1 className="intro__info">Zacznij pomagać! Oddaj niechciane rzeczy w zaufane ręce</h1>
-                    <img className="intro__img" src={decoration} alt="Decoration"/>
-                    <button className="intro__btn intro__btn-return" >ODDAJ RZECZY</button>
-                    <button className="intro__btn intro__btn-organize" >ZORGANIZUJ ZBIÓRKĘ</button>
-                </div>
+        <>
+        <div className='loggin'>
+            <a className='' href={"/"}> Zaloguj</a>
+            <a href={"/"}> Załóż konto</a>
+        </div>
+    <nav>
+        <a href="/">Start</a>
+        <a href="/">O co chodzi?</a>
+        <a href="/">O nas</a>
+        <a href="/">Fundacja i organizacje</a>
+        <a href="/">Kontakt</a>
+    </nav>
+            <img src="src/assets/images/Hero Image.png" alt="" align='left'/>
+            <div>
+            <h1>Zacznij pomagać! Oddaj niechciane rzeczy w zaufane ręce</h1>
+            <img src="src/assets/images/Decoration.png" alt=""/>
             </div>
-        </header>
+            <div>
+                <a href="/">Oddaj rzeczy</a>
+                <a href="/">Zorganizuj zbiórkę</a>
+            </div>
+            
+            </>
     );
-};
+}
 
-export default HomeHeader
+export default HomeHeader;
