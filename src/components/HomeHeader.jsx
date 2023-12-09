@@ -5,8 +5,8 @@ import '../scss/HomeHeader.scss'
 const HomeHeader = () => {
     return (
         <>
-        <div className='loggin'>
-            <a className='' href={"/"}> Zaloguj</a>
+        <div className='login'>
+            <a href={"/"}> Zaloguj</a>
             <a href={"/"}> Załóż konto</a>
         </div>
     <nav>
@@ -16,10 +16,10 @@ const HomeHeader = () => {
         <a href="/">Fundacja i organizacje</a>
         <a href="/">Kontakt</a>
     </nav>
-            <img src="src/assets/images/Hero Image.png" alt="" align='left'/>
+            <img className='img-box' src="src/assets/images/Hero Image.png" alt="" align='left'/>
             <div>
             <h1>Zacznij pomagać! Oddaj niechciane rzeczy w zaufane ręce</h1>
-            <img src="src/assets/images/Decoration.png" alt=""/>
+            <img className='decoration' src="src/assets/images/Decoration.png" alt=""/>
             </div>
             <div>
                 <a href="/">Oddaj rzeczy</a>
