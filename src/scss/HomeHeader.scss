@@ -1,25 +1,58 @@
+header {
+  max-width: 100%;
+
+}
+
 .login {
   display: flex;
   justify-content: flex-end;
+  font-size: 14px;
+  margin-inline: 15px;
+
+
   a {
     border: 0.75px solid rgba(250, 214, 72, 1);
+    text-decoration: none;
+    margin-inline: 15px;
+    margin-top: 44px;
+    padding: 9px;
+
+    &:hover {
+      color: black;
+    }
   }
 }
 
-.nav {
+nav {
   display: flex;
+  font-size: 18px;
   justify-content: flex-end;
-  a {
+  padding: 26px;
 
+  a {
+    text-decoration: none;
+    margin-inline: 15px;
   }
 }
 
 h1 {
+  margin-top: 219px;
+  display: flex;
+  font-size: 38px;
+  text-align: center;
 
 }
 
-.img-box{
-
+.img-box {
+  height: 963px;
+  width: 1100px;
+  top: 0;
+  margin-left: -355px;
+  background: transparent no-repeat padding-box;
+  opacity: 1;
+  display: flex;
+  align-content: flex-start;
+  margin-right: 20px;
 }
 
 .decoration {
