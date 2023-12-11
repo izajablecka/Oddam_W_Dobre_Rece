@@ -1,72 +1,133 @@
+@import "colors_variables";
+@import "fonts";
+
+:root {
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+}
+
 header {
   width: auto;
   height: auto;
 }
 
-  .login {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 14px;
+.login {
+  font-family: $font-base;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  margin-inline: 15px;
+  padding-inline: 152px;
+
+  a {
+    font-family: $font-base;
+    border: 0.75px solid rgba(250, 214, 72, 1);
+    text-decoration: none;
     margin-inline: 15px;
+    margin-top: 44px;
+    padding-inline: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    color: rgba(115, 115, 115, 1);
 
-    a {
-      border: 0.75px solid rgba(250, 214, 72, 1);
-      text-decoration: none;
-      margin-inline: 15px;
-      margin-top: 44px;
-      padding-inline: 10px;
-      padding-top: 9px;
-      padding-bottom: 9px;
-      color: rgba(115, 115, 115, 1);
+  }
+}
 
-    }
+nav {
+  font-family: $font-base;
+  display: flex;
+  font-size: 18px;
+  justify-content: flex-end;
+  padding-inline: 142px;
+  padding-top: 26px;
+
+  a:hover {
+    border: 0.75px solid rgba(60, 60, 60, 1);
+    padding-bottom: 9px;
+    padding-top: 9px;
+    padding-inline: 10px;
   }
 
-  nav {
-    display: flex;
-    font-size: 18px;
-    justify-content: flex-end;
-    padding-inline: 26px;
-    padding-top: 26px;
-
-
-    :hover {
-      border: 0.75px solid rgba(60, 60, 60, 1);
-      padding-bottom: 9px;
-      padding-top: 9px;
-      padding-inline: 10px;
-    }
-
-    a {
-      text-decoration: none;
-      margin-inline: 15px;
-    }
+  a {
+    text-decoration: none;
+    margin-inline: 15px;
+    color: $color-dark-grey;
   }
+}
 
-  h1 {
-    position: relative;
-    margin-top: 219px;
+.img-box {
+  height: auto;
+  width: 900px;
+  top: 0;
+  margin-left: -355px;
+  background: transparent no-repeat padding-box;
+  opacity: 1;
+  display: flex;
+  align-content: flex-start;
+  margin-right: 20px;
+}
+
+.collect-container {
+  text-align: center;
+}
+
+.collect {
+  font-family: $font-base;
+  text-align: center;
+  color: $color-dark-grey;
+  text-decoration: none;
+  border: 0.75px solid $color-dark-grey;
+
+  margin-inline: 20px;
+  padding-inline: 83px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+
+.text-container {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.text-container {
+  max-width: 50%;
+}
+
+
+
+
+  h2 {
+    font-family: $font-base;
+    font-weight: 200;
     font-size: 38px;
     text-align: center;
+    padding-top: 40px;
+
 
   }
 
-  .img-box {
-    position: absolute;
-    height: auto;
-    width: auto;
-    top: 0;
-    margin-left: -355px;
-    background: transparent no-repeat padding-box;
-    opacity: 1;
-    display: flex;
-    align-content: flex-start;
-    margin-right: 20px;
-  }
+.collect {
 
-  .decoration {
+}
 
-  }
+.decoration {
+  width: 253px;
+  height: 33px;
+}
 
 
 

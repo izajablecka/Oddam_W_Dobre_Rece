@@ -21,15 +21,14 @@ const HomeHeader = () => {
 
             <div className="content-container">
                 <div className="image-container">
-                    <img className="img-box" src="src/assets/images/Hero Image.png" alt="" />
+                    <img className="img-box" src="src/assets/images/Hero Image.png" alt=""/>
                 </div>
-
                 <div className="text-container">
-                    <h1>Zacznij pomagać! <br /> Oddaj niechciane rzeczy w zaufane ręce</h1>
-                    <img className='decoration' src="src/assets/images/Decoration.png" alt="" />
-                    <div>
-                        <a href="/">Oddaj rzeczy</a>
-                        <a href="/">Zorganizuj zbiórkę</a>
+                    <h2>Zacznij pomagać! <br/> Oddaj niechciane rzeczy w zaufane ręce</h2>
+                    <img className='decoration' src="src/assets/images/Decoration.png" alt=""/>
+                    <div className="collect-container">
+                        <a className='collect' href="/">Oddaj rzeczy</a>
+                        <a className='collect' href="/">Zorganizuj zbiórkę</a>
                     </div>
                 </div>
             </div>
