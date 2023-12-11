@@ -7,8 +7,8 @@ import HomeThreeColumns from './HomeThreeColumns';
 const Home = () => {
     return (
         <div>
-            <Route path="/" exact component={HomeHeader} />
-            <Route path="/" exact component={HomeThreeColumns} />
+            <HomeHeader />
+            <HomeThreeColumns />
         </div>
     );
 }

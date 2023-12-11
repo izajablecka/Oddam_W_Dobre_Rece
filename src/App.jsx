@@ -11,12 +11,14 @@ import Register from "./components/Register.jsx";
 function App() {
 
   return (
-      <>
-          <Router>
-              <HomeHeader>
-              </HomeHeader>
-          </Router>
-</>
+      <Router>
+          <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/organizations" element={<OrganizationsHome />} />
+          </Routes>
+      </Router>
   )
 }
 
