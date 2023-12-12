@@ -1,0 +1,80 @@
+@import '../scss/fonts';
+@import '../scss/colors_variables';
+@import "../utils/mixin";
+
+
+.steps {
+  .title {
+    text-align: center;
+
+    &__hdl {
+      font-family: $font-base;
+      font-weight: 300;
+      font-size: 38px;
+      margin-top: 55px;
+    }
+
+    &__img {
+      margin-top: 10px;
+    }
+  }
+}
+
+.simple-steps {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  font-family: $font-base;
+  font-weight: 300;
+  font-size: 16px;
+  .col {
+
+    &__img {
+
+      &--1 {
+        width: 83px;
+        height: 83px;
+      }
+
+      &--2 {
+        width: 83px;
+        height: 83px;
+      }
+
+      &--3 {
+        width: 83px;
+        height: 83px;
+      }
+
+      &--4 {
+        width: 83px;
+        height: 83px;
+      }
+    }
+
+    &__hdl {
+      position: relative;
+      &::after {
+        font-size: 18px;
+        content: "";
+        display: block;
+        width: 70px;
+        border: 1px solid;
+        background-color: rgba(112, 112, 112, 1);
+        margin: 15px auto 0;
+      }
+    }
+
+    &__dsc {
+    }
+  }
+
+}
+
+.btn {
+  &__steps {
+    text-decoration: none;
+    border: 0.75px solid $color-dark-grey;
+  }
+}

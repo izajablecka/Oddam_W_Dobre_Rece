@@ -11,9 +11,11 @@
   justify-content: space-around;
 
 
-  .col {
+
+  .column {
     text-align: center;
     margin-left: 40px;
+    margin-inline: 15px;
 
 
     &__number {
