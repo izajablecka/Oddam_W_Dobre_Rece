@@ -69,22 +69,26 @@ nav {
 }
 
 .collect-container {
-  text-align: center;
+  font-family: $font-base;
+
+  margin-inline: 20px;
+
+  padding-top: 65px;
+  padding-bottom: 23px;
+  text-transform: uppercase;
+
+
 }
 
 .collect {
-  font-family: $font-base;
+  border: 0.75px solid $color-dark-grey;
+  margin-inline: 44px;
+
   text-align: center;
   color: $color-dark-grey;
   text-decoration: none;
-  border: 0.75px solid $color-dark-grey;
-
-  margin-inline: 20px;
-  padding-inline: 83px;
-  padding-top: 23px;
-  padding-bottom: 23px;
-  text-transform: uppercase;
   flex-wrap: wrap;
+
 }
 
 .content-container {
@@ -100,6 +104,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 
@@ -108,17 +113,15 @@ nav {
 }
 
 
+h2 {
+  font-family: $font-base;
+  font-weight: 200;
+  font-size: 38px;
+  text-align: center;
+  padding-top: 40px;
 
 
-  h2 {
-    font-family: $font-base;
-    font-weight: 200;
-    font-size: 38px;
-    text-align: center;
-    padding-top: 40px;
-
-
-  }
+}
 
 .collect {
 

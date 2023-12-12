@@ -15,10 +15,9 @@ const Login = () => {
 
     const handleLoginSubmit = (e) => {
         e.preventDefault();
-        // Perform login logic with the login and password values
         console.log('Login:', login);
         console.log('Password:', password);
-        // Add your authentication logic here
+
     };
 
     return (
@@ -35,7 +34,7 @@ const Login = () => {
                 <a href="/">Kontakt</a>
             </nav>
             <div>
-                <h2>Login</h2>
+                <h2>Zaloguj się</h2>
                 <form onSubmit={handleLoginSubmit}>
                     <label>
                         Email
