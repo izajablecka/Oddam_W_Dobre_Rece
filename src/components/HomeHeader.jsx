@@ -27,8 +27,8 @@ const HomeHeader = () => {
                     <h2>Zacznij pomagać! <br/> Oddaj niechciane rzeczy w zaufane ręce</h2>
                     <img className='decoration' src="src/assets/images/Decoration.png" alt=""/>
                     <div className="collect-container">
-                        <a className='collect' href="/">Oddaj rzeczy</a>
-                        <a className='collect' href="/">Zorganizuj zbiórkę</a>
+                        <a className='collect' href="/">Oddaj <br/> rzeczy</a>
+                        <a className='collect' href="/">Zorganizuj <br/> zbiórkę</a>
                     </div>
                 </div>
             </div>
