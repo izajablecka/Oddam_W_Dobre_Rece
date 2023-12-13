@@ -83,10 +83,11 @@ nav {
 .collect {
   border: 0.75px solid $color-dark-grey;
   margin-inline: 44px;
-
   text-align: center;
   color: $color-dark-grey;
   text-decoration: none;
+  width: 310px;
+  height: 120px;
   flex-wrap: wrap;
 
 }
@@ -95,7 +96,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10px;
+  //padding: 10px;
 }
 
 

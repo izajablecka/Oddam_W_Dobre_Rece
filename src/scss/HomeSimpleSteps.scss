@@ -21,6 +21,9 @@
 }
 
 .simple-steps {
+  flex-wrap: wrap;
+  margin-top: 40px;
+  background: $color-light-second-grey;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -31,6 +34,7 @@
   .col {
 
     &__img {
+      margin-top: 74px;
 
       &--1 {
         width: 83px;
@@ -55,6 +59,8 @@
 
     &__hdl {
       position: relative;
+      font-size: 18px;
+      font-weight: 300;
       &::after {
         font-size: 18px;
         content: "";
@@ -62,11 +68,13 @@
         width: 70px;
         border: 1px solid;
         background-color: rgba(112, 112, 112, 1);
-        margin: 15px auto 0;
+        margin: 20px auto 0;
       }
     }
 
     &__dsc {
+      margin-bottom: 62px;
+      margin-top: 10px;
     }
   }
 
@@ -76,5 +84,17 @@
   &__steps {
     text-decoration: none;
     border: 0.75px solid $color-dark-grey;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 310px;
+    height: 120px;
+    color: $color-dark-grey;
+    font-size: 36px;
+    font-weight: 300;
+    font-family: $font-base;
+    margin-inline: auto;
   }
 }
