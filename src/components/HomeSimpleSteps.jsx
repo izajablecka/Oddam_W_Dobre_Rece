@@ -11,7 +11,7 @@ import "../scss/HomeSimpleSteps.scss"
 const HomeSimpleSteps = () => {
 
     return (
-        <section className="steps">
+        <section id="steps" className="steps">
             <div className="title">
                 <h1 className="title__hdl">Wystarczą 4 proste kroki</h1>
                 <img className="title__img" src={decoration} alt="dekoracja"/>

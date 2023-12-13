@@ -1,18 +1,20 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 import '../scss/HomeHeader.scss'
 
 const HomeHeader = () => {
+
     return (
         <header>
             <div className="container">
                 <div className='login'>
-                    <Link to="/login">Zaloguj</Link>
-                    <Link to="/register">Załóż konto</Link>
+                    <RouterLink to="/login">Zaloguj</RouterLink>
+                    <RouterLink to="/register">Załóż konto</RouterLink>
                 </div>
                 <nav>
                     <a href="/">Start</a>
-                    <a href="/">O co chodzi?</a>
+                    <ScrollLink to="steps" smooth={true} duration={500}>O co chodzi?</ScrollLink>
                     <a href="/">O nas</a>
                     <a href="/">Fundacja i organizacje</a>
                     <a href="/">Kontakt</a>
@@ -27,8 +29,8 @@ const HomeHeader = () => {
                     <h2>Zacznij pomagać! <br/> Oddaj niechciane rzeczy w zaufane ręce</h2>
                     <img className='decoration' src="src/assets/images/Decoration.png" alt=""/>
                     <div className="collect-container">
-                        <Link className='collect' to="/login">Oddaj <br /> rzeczy</Link>
-                        <Link className='collect' to="/login">Zorganizuj <br /> zbiórkę</Link>
+                        <RouterLink className='collect' to="/login">Oddaj <br /> rzeczy</RouterLink>
+                        <RouterLink className='collect' to="/login">Zorganizuj <br /> zbiórkę</RouterLink>
                     </div>
                 </div>
             </div>
