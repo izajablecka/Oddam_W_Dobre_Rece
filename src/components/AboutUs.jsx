@@ -11,7 +11,7 @@ const AboutUs = () => {
           <div className='sec'>
               <h3 className='sec__hdl'>O nas</h3>
               <img className='sec__decoration' src={decoration} alt="dekoracja"/>
-              <p className='sec__txt'>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+              <p className='sec__txt'>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. <br /> Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
               <img className='sec__signature' src={signature} alt=""/>
           </div>
           <div className='people'>
