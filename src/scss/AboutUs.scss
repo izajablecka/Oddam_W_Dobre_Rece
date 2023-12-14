@@ -1,0 +1,15 @@
+@import '../scss/fonts';
+@import '../scss/colors_variables';
+@import "../utils/mixin";
+
+.about-us {
+  .sec {
+    &__hdl {}
+    &__decoration {}
+    &__txt {}
+    &__signature {}
+  }
+  .people {
+    &__img {}
+  }
+}
