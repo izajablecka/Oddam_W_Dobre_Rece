@@ -1,2 +1,29 @@
 @import '../scss/fonts';
 @import '../scss/colors_variables';
+
+.contact {
+  background: url("../assets/images/ContactImage.png") no-repeat;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 35px;
+
+
+  &__hdl {
+    font-size: 38px;
+    font-family: $font-base;
+    font-weight: 400;
+  }
+  &__decoration {
+    width: 200px;
+    height: 25px;
+
+  }
+  &__form {
+    label {
+      display: block;
+    }
+  }
+}
