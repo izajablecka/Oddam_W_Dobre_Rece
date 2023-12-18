@@ -42,18 +42,19 @@ nav {
   padding-inline: 142px;
   padding-top: 26px;
 
-  a:hover {
-    border: 0.75px solid rgba(60, 60, 60, 1);
-    padding-bottom: 9px;
-    padding-top: 9px;
-    padding-inline: 10px;
-    cursor: pointer;
-  }
-
   a {
     text-decoration: none;
-    margin-inline: 15px;
+    margin-inline: 20px;
     color: $color-dark-grey;
+    padding-inline: 15px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    transition: border-color 0.9s ease;
+  }
+
+  a:hover {
+    cursor: pointer;
+    border: 0.75px solid $color-black;
   }
 }
 
