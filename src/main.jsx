@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './scss/index.scss'
 import '../src/scss/main.scss'
-import ErrorPage from "./error_page.jsx";
+import ErrorBoundary from './ErrorBoundary';
 
 import {
     createBrowserRouter,
@@ -13,7 +13,7 @@ import {
 const router = createBrowserRouter([
     {
         path: "/",
-        errorElement: <ErrorPage />,
+        errorElement: <ErrorBoundary />,
     },
 ]);
 

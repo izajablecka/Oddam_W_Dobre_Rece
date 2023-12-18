@@ -16,7 +16,7 @@ const HomeHeader = () => {
                     <a href="/">Start</a>
                     <ScrollLink to="steps" smooth={true} duration={500}>O co chodzi?</ScrollLink>
                     <ScrollLink to="about-us" smooth={true} duration={500}>O nas</ScrollLink>
-                    <a href="/">Fundacja i organizacje</a>
+                    <ScrollLink to="charity" smooth={true} duration={500}>Fundacja i organizacje</ScrollLink>
                     <a href="/">Kontakt</a>
                 </nav>
             </div>

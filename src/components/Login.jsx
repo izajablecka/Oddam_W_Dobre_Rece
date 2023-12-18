@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import {Link} from "react-router-dom";
+import dekoracja from "../assets/images/Decoration.png"
+import "../scss/Login.scss"
 
 const Login = () => {
     const [login, setLogin] = useState('');
@@ -33,9 +35,10 @@ const Login = () => {
                 <a href="/">Fundacja i organizacje</a>
                 <a href="/">Kontakt</a>
             </nav>
-            <div>
-                <h2>Zaloguj się</h2>
-                <form onSubmit={handleLoginSubmit}>
+            <div className="log-in">
+                <h2 className="log-in__hdl">Zaloguj się</h2>
+                <img className="log-in__img" src={dekoracja} alt=""/>
+                <form className="log-in__form" onSubmit={handleLoginSubmit}>
                     <label>
                         Email
                         <input type="text" value={login} onChange={handleLoginChange}/>
@@ -46,12 +49,15 @@ const Login = () => {
                         <input type="password" value={password} onChange={handlePasswordChange}/>
                     </label>
                     <br/>
-                    <Link to='/register'>Załóż konto</Link>
-                    <button type="submit">Zaloguj się</button>
+
                 </form>
+                <div className="buttons-container">
+                <Link to='/register' className="register-button">Załóż konto</Link>
+                <button type="submit" className="login-button">Zaloguj się</button>
+            </div>
             </div>
         </div>
     );
 }
 
-    export default Login;
+export default Login;
