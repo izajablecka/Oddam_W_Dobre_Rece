@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
+import dekoracja from "../assets/images/Decoration.png"
+import "../scss/Register.scss"
 
 const Login = () => {
     const [login, setLogin] = useState('');
@@ -49,27 +51,31 @@ const Login = () => {
                 <a href="/">Kontakt</a>
             </nav>
 
-            <div>
-                <h2>Załóż konto</h2>
-                <form onSubmit={handleRegisterSubmit}>
+            <div className="account">
+                <h2 className="account__hdl">Załóż konto</h2>
+                <img className="account__img" src={dekoracja} alt=""/>
+                <form className="account__form" onSubmit={handleRegisterSubmit}>
                     <label>
                         Email
-                        <input type="text" value={login} onChange={handleLoginChange} />
+                        <input type="text" value={login} onChange={handleLoginChange}/>
                     </label>
-                    <br />
+                    <br/>
                     <label>
                         Hasło
-                        <input type="password" value={password} onChange={handlePasswordChange} />
+                        <input type="password" value={password} onChange={handlePasswordChange}/>
                     </label>
-                    <br />
+                    <br/>
                     <label>
                         Powtórz hasło
-                        <input type="password" value={passwordConfirmation} onChange={handlePasswordConfirmationChange} />
+                        <input type="password" value={passwordConfirmation}
+                               onChange={handlePasswordConfirmationChange}/>
                     </label>
-                    <br />
-                    <Link to="/login">Zaloguj się</Link>
-                    <button type="submit">Załóż konto</button>
+                    <br/>
                 </form>
+                <div className="buttons-container">
+                    <Link to="/login" className="link-button">Zaloguj się</Link>
+                    <button type="submit" className="submit-button">Załóż konto</button>
+                </div>
             </div>
         </div>
     );

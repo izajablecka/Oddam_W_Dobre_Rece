@@ -35,10 +35,10 @@ const Login = () => {
                 <a href="/">Fundacja i organizacje</a>
                 <a href="/">Kontakt</a>
             </nav>
-            <div className="log-in">
-                <h2 className="log-in__hdl">Zaloguj się</h2>
-                <img className="log-in__img" src={dekoracja} alt=""/>
-                <form className="log-in__form" onSubmit={handleLoginSubmit}>
+            <div className="account">
+                <h2 className="account__hdl">Zaloguj się</h2>
+                <img className="account__img" src={dekoracja} alt=""/>
+                <form className="account__form" onSubmit={handleLoginSubmit}>
                     <label>
                         Email
                         <input type="text" value={login} onChange={handleLoginChange}/>
@@ -52,8 +52,8 @@ const Login = () => {
 
                 </form>
                 <div className="buttons-container">
-                <Link to='/register' className="register-button">Załóż konto</Link>
-                <button type="submit" className="login-button">Zaloguj się</button>
+                <Link to='/register' className="link-button">Załóż konto</Link>
+                <button type="submit" className="submit-button">Zaloguj się</button>
             </div>
             </div>
         </div>
