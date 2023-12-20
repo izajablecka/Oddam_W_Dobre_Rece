@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
-import dekoracja from "../assets/images/Decoration.png"
-import "../scss/Register.scss"
+import dekoracja from '../assets/images/Decoration.png';
+import '../scss/Register.scss';
 
-const Login = () => {
+const Register = () => {
     const [login, setLogin] = useState('');
     const [password, setPassword] = useState('');
     const [passwordConfirmation, setPasswordConfirmation] = useState('');
@@ -20,21 +20,21 @@ const Login = () => {
         setPasswordConfirmation(e.target.value);
     };
 
-    const handleLoginSubmit = (e) => {
-        e.preventDefault();
-        // Perform login logic with the login and password values
-        console.log('Login:', login);
-        console.log('Password:', password);
-        // Add your authentication logic here
-    };
-
     const handleRegisterSubmit = (e) => {
         e.preventDefault();
-        // Perform registration logic with the login, password, and password confirmation values
-        console.log('Register - Email:', login);
-        console.log('Register - Password:', password);
-        console.log('Register - Password Confirmation:', passwordConfirmation);
-        // Add your registration logic here
+        // Check if password and password confirmation match
+        if (password === passwordConfirmation) {
+            // Perform registration logic with the login, password, and password confirmation values
+            console.log('Register - Email:', login);
+            console.log('Register - Password:', password);
+            console.log('Register - Password Confirmation:', passwordConfirmation);
+            // Add your registration logic here
+
+            // Redirect or perform other actions after successful registration
+        } else {
+            // Handle password mismatch error (display an error message, for example)
+            console.error('Password and password confirmation do not match.');
+        }
     };
 
     return (
@@ -67,18 +67,25 @@ const Login = () => {
                     <br/>
                     <label>
                         Powtórz hasło
-                        <input type="password" value={passwordConfirmation}
-                               onChange={handlePasswordConfirmationChange}/>
+                        <input
+                            type="password"
+                            value={passwordConfirmation}
+                            onChange={handlePasswordConfirmationChange}
+                        />
                     </label>
                     <br/>
+                    <div className="buttons-container">
+                        <Link to="/login" className="link-button">
+                            Zaloguj się
+                        </Link>
+                        <button type="submit" className="submit-button">
+                            Załóż konto
+                        </button>
+                    </div>
                 </form>
-                <div className="buttons-container">
-                    <Link to="/login" className="link-button">Zaloguj się</Link>
-                    <button type="submit" className="submit-button">Załóż konto</button>
-                </div>
             </div>
         </div>
     );
-}
+};
 
-export default Login;
+export default Register;

@@ -5,7 +5,8 @@ import dekoracja from "../assets/images/Decoration.png";
 const Contact = () => {
 
     return (
-            <div className="contact">
+        <div className="contact">
+            <div className="contact__main">
                 <div className="contact__hdl">Skontaktuj się z nami</div>
                 <img className="contact__decoration" src={dekoracja} alt=""/>
                 <form className="contact__form">
@@ -23,8 +24,8 @@ const Contact = () => {
                     </label>
                     <button type="submit">Wyślij</button>
                 </form>
-
             </div>
+        </div>
 
     )
 }

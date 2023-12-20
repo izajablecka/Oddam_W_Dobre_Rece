@@ -361,3 +361,19 @@
     }
   }
 }
+
+.numbers {
+  display: flex;
+  justify-content: center;
+  &__page-1 {
+    border: solid 1px $color-dark-grey;
+    padding: 13px;
+    margin: 8px 20px;
+  }
+  &__page-2 {
+    margin: 20px;
+  }
+  &__page-3 {
+    margin: 20px;
+  }
+}

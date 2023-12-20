@@ -38,6 +38,11 @@ const WhoWeHelp = () => {
                                 <p className="charity__unit-3__txt-right">ubrania, jedzenie, ciepłe koce</p>
                             </div>
                         </div>
+                        <div className="numbers">
+                            <div className="numbers__page-1">1</div>
+                            <div className="numbers__page-2">2</div>
+                            <div className="numbers__page-3">3</div>
+                        </div>
                     </div>
                 );
             case "organizacje":
@@ -65,6 +70,10 @@ const WhoWeHelp = () => {
                                 <p className="NGO__unit-3__txt">Scelerisque in dictum non consectetur a erat nam.</p>
                                 <p className="NGO__unit-3__txt-right">Mi, quis, hendrerit, dolor</p>
                             </div>
+                        </div>
+                        <div className="numbers">
+                            <div className="numbers__page-1">1</div>
+                            <div className="numbers__page-2">2</div>
                         </div>
                     </div>
 
