@@ -27,29 +27,32 @@
     }
 
     &__txt {
+      flex-wrap: wrap;
       font-size: 30px;
       letter-spacing: -0.6px;
       line-height: 1.5;
       font-weight: 400;
-      margin-inline: 190px;
+      margin-inline: 150px;
       margin-top: 65px;
 
     }
 
     &__signature {
       text-align: right;
-      margin-top: 80px;
-      margin-bottom: 185px;
+      //margin-top: 80px;
+      //margin-bottom: 185px;
       margin-left: 350px;
     }
   }
 
   .people {
-    width: 50%;
+    width: 650px;
+    display: flex;
+    margin-right: 100px;
+
 
     &__img {
-      width: 1308px;
-      height: 935px;
+
     }
   }
 }
