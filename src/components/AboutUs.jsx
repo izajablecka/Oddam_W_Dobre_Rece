@@ -17,6 +17,7 @@ const AboutUs = () => {
           <div className='people'>
               <img className='people__img' src={people} alt=""/>
           </div>
+
       </section>
 
   );
