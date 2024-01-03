@@ -3,7 +3,7 @@
 
 
 
-.account {
+.account-register {
   text-align: center;
   margin-top: 123px;
 
@@ -47,12 +47,13 @@
     }
   }
 
-  .buttons-container {
+  .buttons-register {
     display: inline-flex;
     font-size: 18px;
     color: $color-black;
     font-family: $font-base;
     font-weight: 300;
+
 
     .submit-button {
       padding: 13px;
@@ -70,7 +71,9 @@
       text-align: left;
       text-decoration: none;
       margin-right: 150px;
-
+      color: $color-black;
+      width: 117px;
+      height: 50px;
     }
   }
 }

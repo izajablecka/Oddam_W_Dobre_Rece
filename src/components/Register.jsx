@@ -51,10 +51,10 @@ const Register = () => {
                 <a href="/">Kontakt</a>
             </nav>
 
-            <div className="account">
-                <h2 className="account__hdl">Załóż konto</h2>
-                <img className="account__img" src={dekoracja} alt=""/>
-                <form className="account__form" onSubmit={handleRegisterSubmit}>
+            <div className="account-register">
+                <h2 className="account-register__hdl">Załóż konto</h2>
+                <img className="account-register__img" src={dekoracja} alt=""/>
+                <form className="account-register__form" onSubmit={handleRegisterSubmit}>
                     <label>
                         Email
                         <input type="text" value={login} onChange={handleLoginChange}/>
@@ -74,7 +74,7 @@ const Register = () => {
                         />
                     </label>
                     <br/>
-                    <div className="buttons-container">
+                    <div className="buttons-register">
                         <Link to="/login" className="link-button">
                             Zaloguj się
                         </Link>
