@@ -1,8 +1,8 @@
 import React from "react";
 import '../scss/Contact.scss'
-import dekoracja from "../../public/images/Decoration.png";
-import facebook from "../../public/images/Facebook.png"
-import instagram from "../../public/images/Instagram.png"
+import dekoracja from "../assets/images/Decoration.png";
+import facebook from "../assets/images/Facebook.png"
+import instagram from "../assets/images/Instagram.png"
 
 const Contact = () => {
 
