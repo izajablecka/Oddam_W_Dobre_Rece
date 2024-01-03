@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
-import dekoracja from '/images/Decoration.png';
+import dekoracja from '../assets/images/Decoration.png';
 import '../scss/Register.scss';
 
 const Register = () => {
@@ -22,17 +22,17 @@ const Register = () => {
 
     const handleRegisterSubmit = (e) => {
         e.preventDefault();
-        // Check if password and password confirmation match
+
         if (password === passwordConfirmation) {
-            // Perform registration logic with the login, password, and password confirmation values
+
             console.log('Register - Email:', login);
             console.log('Register - Password:', password);
             console.log('Register - Password Confirmation:', passwordConfirmation);
-            // Add your registration logic here
 
-            // Redirect or perform other actions after successful registration
+
+
         } else {
-            // Handle password mismatch error (display an error message, for example)
+
             console.error('Password and password confirmation do not match.');
         }
     };
