@@ -1,8 +1,8 @@
 import '../scss/AboutUs.scss'
 import React from "react";
-import decoration from '../assets/images/Decoration.png'
-import signature from '../assets/images/Signature.png'
-import people from '../assets/images/People.png'
+import decoration from '/images/Decoration.png'
+import signature from '/images/Signature.png'
+import people from '/images/People.png'
 
 const AboutUs = () => {
   return (

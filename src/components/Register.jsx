@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
-import dekoracja from '../assets/images/Decoration.png';
+import dekoracja from '/images/Decoration.png';
 import '../scss/Register.scss';
 
 const Register = () => {

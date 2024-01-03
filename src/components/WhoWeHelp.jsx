@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import '../scss/WhoWeHelp.scss'
-import decoration from "../assets/images/Decoration.png"
+import decoration from "/images/Decoration.png"
 
 const WhoWeHelp = () => {
     const [activePage, setActivePage] = useState("fundacje");

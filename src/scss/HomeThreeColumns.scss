@@ -5,7 +5,7 @@
 
 .columns {
   @include flex(center);
-  background-image: url(../assets/images/ThreeColumnsBackground.png);
+  background-image: url(../../public/images/ThreeColumnsBackground.png);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

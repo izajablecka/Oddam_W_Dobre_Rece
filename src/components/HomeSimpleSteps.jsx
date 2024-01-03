@@ -1,10 +1,10 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import decoration from '../assets/images/Decoration.png'
-import Tshirt from '../assets/images/Icon-1.png'
-import Bag from '../assets/images/Icon-2.png'
-import Search from '../assets/images/Icon-3.png'
-import Reload from '../assets/images/Icon-4.png'
+import decoration from '/images/Decoration.png'
+import Tshirt from '/images/Icon-1.png'
+import Bag from '/images/Icon-2.png'
+import Search from '/images/Icon-3.png'
+import Reload from '/images/Icon-4.png'
 import "../scss/HomeSimpleSteps.scss"
 
 
