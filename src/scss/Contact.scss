@@ -1,12 +1,10 @@
 @import '../scss/fonts';
 @import '../scss/colors_variables';
 
-.contact-background {
-  z-index: -42;
-  opacity: 0.2;
-
-
-}
+//.contact-background {
+//  z-index: -42;
+//  opacity: 0.2;
+//}
 
 .contact {
   background: url("../assets/images/ContactImage.png") no-repeat;
@@ -14,7 +12,6 @@
   //flex-wrap: wrap;
   padding-top: 80px;
   padding-inline: 40px;
-  @extend .contact-background;
 
 
   &__main {
@@ -39,39 +36,41 @@
 
     }
 
-    &__form {
+    &__form-contact {
       flex-wrap: wrap;
       flex-direction: column;
-      label {
-        display: block;
+
+      &__name {
       }
 
-      input, textarea {
-        margin-bottom: 10px;
+      &__email {
+      }
+
+      &__msg {
+      }
+
+    }
+
+    .copyright {
+      color: $color-dark-grey;
+      font-size: 18px;
+      font-family: $font-base;
+      margin-top: 200px;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .icons {
+
+      display: flex;
+      justify-content: flex-end;
+
+      .icon {
+        margin-top: -30px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+        padding-right: 10px;
       }
     }
   }
-
-  .copyright {
-    color: $color-dark-grey;
-    font-size: 18px;
-    font-family: $font-base;
-    margin-top: 200px;
-    display: flex;
-    justify-content: center;
-
-  }
-
-  .icons {
-
-    display: flex;
-    justify-content: flex-end;
-
-    .icon {
-      margin-top: -30px;
-      margin-bottom: 20px;
-      margin-right: 10px;
-      padding-right: 10px;
-    }
-  }
-}

@@ -18,7 +18,7 @@
   }
 }
 
-form {
+.account-register__form {
   background-color: $color-light-second-grey;
   width: 384px;
   height: 328px;
@@ -27,6 +27,14 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  .email {
+    margin-top: 150px;
+  }
+
+  .password-repeat {
+    margin-bottom: 80px;
+  }
 
   label {
     display: flex;
@@ -43,12 +51,7 @@ form {
     }
   }
 }
-.email {
-  margin-top: 140px;
-}
-.password-repeat {
-  margin-bottom: 80px;
-}
+
 
 .buttons-register {
   display: flex;
