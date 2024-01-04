@@ -42,6 +42,7 @@ nav {
   padding-inline: 142px;
   padding-top: 26px;
 
+
   a {
     text-decoration: none;
     margin-inline: 20px;
@@ -50,6 +51,7 @@ nav {
     padding-top: 9px;
     padding-bottom: 9px;
     transition: border-color 0.9s ease;
+    border: 0.75px solid transparent;
   }
 
   a:hover {
