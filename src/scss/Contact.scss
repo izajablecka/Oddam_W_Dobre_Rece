@@ -3,7 +3,7 @@
 @import "../utils/mixin";
 
 .contact__section {
-  margin-top: 200px;
+  margin-top: 80px;
   height: 1100px;
   width: 100%;
   position: absolute;
@@ -17,16 +17,17 @@
     left: 0;
     z-index: -42;
     opacity: 0.2;
-    margin-top: 80px;
+    margin-top: -10px;
+    width: 100%;
 
   }
 
   .box__right {;
-    @include flex(flex-end, center, column);
-    margin-top: 200px;
-    margin-right: 52px;
-    margin-left: 1150px;
-
+    @include flex(flex-end, flex-end, column);
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 
     &--hdl {
       font-family: $font-base;
@@ -36,34 +37,33 @@
       letter-spacing: -0.76px;
       opacity: 1;
       text-align: center;
-
-
+      width: 358px;
+      height: 52px;
+      margin-top: 200px;
     }
 
     &--decoration {
-      margin-top: 20px;
       width: 253px;
       height: 33px;
       opacity: 1;
-
+      margin-right: 50px;
 
     }
   }
 
   .contact__form {
-    margin-top: 77px;
-    gap: 40px;
-    margin-left: 1500px;
-    margin-right: 142px;
-
+    font-family: $font-base;
+    margin-top: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 
     &--group {
-      @include flex(flex-end, center, row);
+      @include flex(flex-start, flex-start, row);
       gap: 20px;
+      margin-left: 820px;
       width: 256px;
       height: 62px;
-
-
 
 
       &--1 {
@@ -82,31 +82,48 @@
     }
 
     &--msg {
-      @include flex(center, flex-start,  column);
-      margin-top: 100px;
-      &--label2{
+      font-family: $font-base;
+      @include flex(center, flex-start, column);
+      margin-top: 50px;
+      margin-left: 820px;  // Adjusted this line to center the msg
+      margin-right: auto; // Adjusted this line to center the msg
+      align-items: center;
+      width: 528px;
+      height: 97px;
 
+      &--label2 {
       }
-      &--in2 {}
+
+      &--in2 {
+        width: 528px;
+        height: 97px;
+      }
     }
-
-
   }
 
   .contact__btn {
-    @include flex(flex-end);
+    font-family: $font-base;
+    @include flex(flex-end, center);
     margin-top: 150px;
     color: blue;
+    border: 0.75px solid rgba(60, 60, 60, 1);
+    background: none;
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+
 
   }
 
 
   .footer {
+    font-family: $font-base;
     @include flex(flex-end);
     margin-top: 50px;
 
-
     &__copy {
+      display: flex;
+      justify-content: flex-end;
 
     }
 

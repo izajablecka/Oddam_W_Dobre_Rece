@@ -28,8 +28,8 @@ const Contact = () => {
                             style={{
                                 border: 'none',
                                 borderBottom: '1px solid rgba(112, 112, 112, 1)',
-
-
+                                textAlign: 'left',
+                                color: '#d3d3d3',
                             }}
                         />
                     </div>
@@ -62,9 +62,7 @@ const Contact = () => {
                         name="text"
                         rows="5"
                         cols="20"
-                        placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                         ut aliquip ex ea commodo consequat."
+                        placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                         style={{
                             border: 'none',
                             borderBottom: '1px solid rgba(112, 112, 112, 1)',
