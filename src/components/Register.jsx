@@ -55,17 +55,17 @@ const Register = () => {
                 <h2 className="account-register__hdl">Załóż konto</h2>
                 <img className="account-register__img" src={dekoracja} alt=""/>
                 <form className="account-register__form" onSubmit={handleRegisterSubmit}>
-                    <label>
+                    <label className="email">
                         Email
                         <input type="text" value={login} onChange={handleLoginChange}/>
                     </label>
                     <br/>
-                    <label>
+                    <label className="password">
                         Hasło
                         <input type="password" value={password} onChange={handlePasswordChange}/>
                     </label>
                     <br/>
-                    <label>
+                    <label className="password-repeat">
                         Powtórz hasło
                         <input
                             type="password"

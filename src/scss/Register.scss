@@ -2,7 +2,6 @@
 @import '../scss/colors_variables';
 
 
-
 .account-register {
   text-align: center;
   margin-top: 123px;
@@ -17,70 +16,69 @@
 
   &__img {
   }
+}
 
-  &__form {
-    background-color: $color-light-second-grey;
-    width: 384px;
-    height: 328px;
-    margin: 47px auto;
+form {
+  background-color: $color-light-second-grey;
+  width: 384px;
+  height: 328px;
+  margin: 47px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  label {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: -20px;
+    text-align: center;
+    margin-top: 10px;
 
-
-    label {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-
-
-
-      input {
-        border: none;
-        background: none;
-        border-bottom: 1px solid $color-dark-grey;
-        padding: 5px;
-        margin-bottom: 15px;
-        outline: none;
-      }
-
+    input {
+      border: none;
+      background: none;
+      border-bottom: 1px solid $color-dark-grey;
+      padding: 10px;
+      outline: none;
     }
   }
+}
+.email {
+  margin-top: 140px;
+}
+.password-repeat {
+  margin-bottom: 80px;
+}
 
-  .buttons-register {
-    display: flex;
-    //flex-direction: column;
+.buttons-register {
+  display: flex;
+  font-size: 18px;
+  color: $color-black;
+  font-family: $font-base;
+  font-weight: 300;
+  margin-bottom: 20px;
 
-    font-size: 18px;
+
+  .submit-button {
+    padding: 13px;
+    border: 0.75px solid rgba(60, 60, 60, 1);
+    background: none;
+    color: rgba(0, 0, 0, 1);
+    cursor: pointer;
+    text-decoration: none;
+    flex: 1;
+    margin-top: -13px;
+    width: 127px;
+    height: 50px;
+    text-align: center;
+  }
+
+  .link-button {
+    text-align: left;
+    text-decoration: none;
+    margin-right: 200px;
     color: $color-black;
-    font-family: $font-base;
-    font-weight: 300;
-
-
-    .submit-button {
-      padding: 13px;
-      border: 0.75px solid rgba(60, 60, 60, 1);
-      background: none;
-      color: rgba(0, 0, 0, 1);
-      cursor: pointer;
-      text-decoration: none;
-      flex: 1;
-      margin-left: 150px;
-      margin-top: -13px;
-      width: 137px;
-      height: 50px;
-      text-align: center;
-    }
-
-    .link-button {
-      text-align: left;
-      text-decoration: none;
-      margin-right: 150px;
-      color: $color-black;
-      width: 117px;
-      height: 50px;
-    }
+    width: 117px;
+    height: 50px;
   }
 }
