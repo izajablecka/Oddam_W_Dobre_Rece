@@ -1,76 +1,120 @@
-@import '../scss/fonts';
-@import '../scss/colors_variables';
+@import "../utils/fonts";
+@import "../utils/colors_variables";
+@import "../utils/mixin";
 
-//.contact-background {
-//  z-index: -42;
-//  opacity: 0.2;
-//}
-
-.contact {
-  background: url("../assets/images/ContactImage.png") no-repeat;
-  background-size: cover;
-  //flex-wrap: wrap;
-  padding-top: 80px;
-  padding-inline: 40px;
+.contact__section {
+  margin-top: 200px;
+  height: 1100px;
+  width: 100%;
+  position: absolute;
 
 
-  &__main {
+  .contact__img {
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -42;
+    opacity: 0.2;
+    margin-top: 80px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    height: 100vh;
+  }
+
+  .box__right {;
+    @include flex(flex-end, center, column);
+    margin-top: 200px;
+    margin-right: 52px;
+    margin-left: 1150px;
 
 
-    &__hdl {
+    &--hdl {
+      font-family: $font-base;
       font-size: 38px;
-      font-family: $font-base;
       font-weight: 400;
-      align-self: flex-start;
-    }
-
-    &__decoration {
-      width: 200px;
-      height: 25px;
-
-    }
-
-    &__form-contact {
-      flex-wrap: wrap;
-      flex-direction: column;
-
-      &__name {
-      }
-
-      &__email {
-      }
-
-      &__msg {
-      }
-
-    }
-
-    .copyright {
       color: $color-dark-grey;
-      font-size: 18px;
-      font-family: $font-base;
-      margin-top: 200px;
-      display: flex;
-      justify-content: center;
+      letter-spacing: -0.76px;
+      opacity: 1;
+      text-align: center;
+
 
     }
 
-    .icons {
+    &--decoration {
+      margin-top: 20px;
+      width: 253px;
+      height: 33px;
+      opacity: 1;
 
-      display: flex;
-      justify-content: flex-end;
 
-      .icon {
-        margin-top: -30px;
-        margin-bottom: 20px;
-        margin-right: 10px;
-        padding-right: 10px;
+    }
+  }
+
+  .contact__form {
+    margin-top: 77px;
+    gap: 40px;
+    margin-left: 1500px;
+    margin-right: 142px;
+
+
+    &--group {
+      @include flex(flex-end, center, row);
+      gap: 20px;
+      width: 256px;
+      height: 62px;
+
+
+
+
+      &--1 {
+
+        &--label {
+
+        }
+
+
+        &--in {
+          margin-top: 12px;
+
+        }
+
+      }
+    }
+
+    &--msg {
+      @include flex(center, flex-start,  column);
+      margin-top: 100px;
+      &--label2{
+
+      }
+      &--in2 {}
+    }
+
+
+  }
+
+  .contact__btn {
+    @include flex(flex-end);
+    margin-top: 150px;
+    color: blue;
+
+  }
+
+
+  .footer {
+    @include flex(flex-end);
+    margin-top: 50px;
+
+
+    &__copy {
+
+    }
+
+    &__icons {
+      &--icon {
+
       }
     }
   }
+
+}
